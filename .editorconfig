@@ -1,0 +1,28 @@
+# http://editorconfig.org
+
+# Detener la búsqueda de archivos .editorconfig en este archivo, indicamos que es el archivo raíz
+root = true
+
+[*]
+# Estilo de indentación
+# Usa espacios en lugar de tabulaciones
+indent_style = space
+
+# Tamaño de la indentación en caracteres de un solo espacio
+indent_size = 2
+
+# Tipo de salto de línea (LF es estándar en sistemas Unix/Linux)
+end_of_line = lf
+
+# Codificación de caracteres
+charset = utf-8
+
+# Recortar los espacios en blanco al final de las líneas
+trim_trailing_whitespace = true
+
+# Desactivar recorte de espacios en blanco al final de líneas en archivos markdown
+[*.md]
+trim_trailing_whitespace = false
+
+# Asegurarse de que los archivos terminen con una nueva línea
+insert_final_newline = true

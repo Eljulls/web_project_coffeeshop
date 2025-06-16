@@ -1,0 +1,4 @@
+# Ignorar archivos o carpetas específicos para Prettier
+
+# Ignorar la carpeta vendor/normalize.css
+
