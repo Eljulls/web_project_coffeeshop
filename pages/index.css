@@ -1,8 +1,14 @@
+/* index.css - estilos básicos */
 
-@import url("../blocks/page.css");
-@import url("../blocks/header.css");
-@import url("../blocks/nav.css");
-@import url("../blocks/recipes.css");
-@import url("../blocks/reservation.css");
-@import url("../blocks/form.css");
-@import url("../blocks/footer.css");
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
