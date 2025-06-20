@@ -197,9 +197,9 @@ select {
 button,
 [type="button"],
 [type="reset"],
-[type="submit"]
-
-
+[type="submit"] {
+  -webkit-appearance: button;
+}
 
 /**
  * Elimina el borde interior y el padding en Firefox.
@@ -220,9 +220,9 @@ button::-moz-focus-inner,
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring
-
-
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
 
 /**
  * Corrige el padding en Firefox.
@@ -288,7 +288,11 @@ textarea {
  * 1. Corrige la apariencia extraña en Chrome y Safari.
  * 2. Corrige el estilo de contorno en Safari.
  */
- 
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
 
 /**
  * Elimina el padding interior en Chrome y Safari, en macOS.
