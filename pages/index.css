@@ -24,14 +24,14 @@
   box-sizing: border-box;
 }
 
-.nav_logo {
+.nav__logo {
   width: 105px;
   height: 39px;
   display: block;
   margin-left: 30px; /* margen izquierdo extra si quieres que se separe del borde */
 }
 
-.nav_links {
+.nav__links{
   display: flex;
   list-style: none;
   padding: 0;
@@ -46,7 +46,7 @@
   align-items: center; /* para que el texto esté verticalmente centrado */
 }
 
-.nav_link {
+.nav__link{
   text-decoration: none;
   color: #000000;
   font-weight: bold;
@@ -57,7 +57,7 @@
   height: auto; /* que tome el alto del padding */
 }
 
-.header_content {
+.header__content {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Centra verticalmente la imagen y el texto */
@@ -66,7 +66,7 @@
 }
 
 /* Título principal */
-.header_title {
+.header__title {
   font-family: "Noto Serif";
   font-style: italic;
   font-weight: normal;
@@ -80,7 +80,7 @@
 }
 
 /* Segundo título */
-.header_title2 {
+.header__title--alt {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -94,7 +94,7 @@
 }
 
 /* Párrafo de descripción */
-.header_descripcion {
+.header__descripcion {
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: normal;
@@ -107,7 +107,7 @@
 }
 
 /* Imagen */
-.header_image {
+.header__image {
   width: 646px;
   height: 568px;
   margin: 0 5px; /* 5px a derecha e izquierda */
@@ -115,23 +115,29 @@
   object-fit: cover;
 }
 
-.header_footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 80px 40px 80px; /* izquierda, derecha, abajo */
+/* Estilo común a ambos elementos del footer */
+.header__footer-item {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #838383;
-  box-sizing: border-box;
+  max-width: 50%;
 }
 
-.header_footer-left,
-.header_footer-right {
-  max-width: 50%;
+/* Para el que va alineado a la izquierda */
+.header__footer-item--left {
+  text-align: left;
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+
+/* Para el que va alineado a la derecha */
+.header__footer-item--right {
+  text-align: right;
+  margin-right: 80px;
+  margin-bottom: 40px;
 }
 
 .content {
@@ -145,7 +151,7 @@
 }
 
 /* Sección de título y descripción */
-.section_title {
+.recetas__header {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -163,7 +169,7 @@
 }
 
 /* Descripción */
-.recetas_descripcion {
+.recetas__descripcion {
   font-family: "Noto Serif", serif;
   font-style: normal;
   font-weight: normal;
@@ -174,7 +180,7 @@
 }
 
 /* Contenedor centrado para ambos videos */
-.videos_container {
+.recetas__videos {
   display: flex;
   justify-content: center; /* centra horizontalmente los videos */
   gap: 40px;
