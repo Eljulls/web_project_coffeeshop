@@ -79,8 +79,8 @@
   margin-top: 10px;
 }
 
-/* Segundo título */
-.header__title--alt {
+/* Cambié header__title--alt por header__title-alt (sin guion doble) para seguir BEM */
+.header__title-alt {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -93,7 +93,6 @@
   margin-top: 0; /* Pegado al primer título */
 }
 
-/* Párrafo de descripción */
 .header__descripcion {
   font-family: "Noto Serif";
   font-style: normal;
@@ -106,11 +105,10 @@
   margin-top: 28px;
 }
 
-/* Imagen */
 .header__image {
   width: 646px;
   height: 568px;
-  margin: 0 5px; /* 5px a derecha e izquierda */
+  margin: 0 5px;
   display: block;
   object-fit: cover;
 }
@@ -119,7 +117,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0 80px 40px 80px; /* izquierda, derecha, abajo */
+  padding: 0 80px 40px 80px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -129,20 +127,13 @@
   box-sizing: border-box;
 }
 
-.header__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 80px 40px;
+.header__paragraph {
+  max-width: 50%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #838383;
-  box-sizing: border-box;
-}
-
-.header__paragraph {
-  max-width: 50%;
+  margin: 0; /* para evitar márgenes extra en <p> */
 }
 
 .header__paragraph--left {
@@ -152,6 +143,7 @@
 .header__paragraph--right {
   text-align: right;
 }
+
 
 .content {
   background-color: #0a2850;
