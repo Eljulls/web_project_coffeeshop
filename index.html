@@ -6,9 +6,10 @@
     <meta name="author" content="Tu Nombre" />
     <meta name="description" content="Página de inicio del Proyecto 4" />
     <meta name="keywords" content="HTML, CSS, Proyecto, TripleTen" />
-     <title>Página de inicio</title>
-     <link rel="stylesheet" href="./vendor/normalize.css">
-    <link rel="stylesheet" href="./pages/index.css" >
+    <title>Página de inicio</title>
+    <link rel="shortcut icon " href="favicon.ico" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,18 +18,85 @@
     />
   </head>
   <body>
-
     <div class="page">
-      <header class ="header">
-        <h1>Bienvenido</h1>
+      <header class="header">
+        <nav class="nav">
+          <img
+            class="nav_logo"
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logotipo de la CoffeeShop TripleEspresso"
+          />
+          <ul class="nav_links">
+            <li>
+              <a class="nav_link" href="#Recetas"> Recetas</a>
+            </li>
+            <li>
+              <a class="nav_link" href="#Reservas una mesa">Reserva una mesa</a>
+            </li>
+            <li>
+              <a class="nav_link" href="#Contactos">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_content">
+          <div>
+            <h1 class="header_title">Cafe de especialidad</h1>
+            <h1 class="header_title2">en Triple Peaks</h1>
+            <p class="header_descripcion">
+              ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
+              café para darte energía y motivar tu creatividad.
+            </p>
+          </div>
+          <div>
+            <img
+              class="header_image"
+              src="./images/inside_coffee_shop.png"
+              alt="Ilustracion de la coffe CoffeeShop"
+            />
+          </div>
+        </div>
+        <div class="header_footer">
+          <p class="header_footer-left">
+            Horario:<br />
+            Lunes a Viernes (de 10:00h a 19:00h)<br />
+            Sábados y Domingos (de 11:00h a 18:00h)
+          </p>
+          <p class="header_footer-right">
+            Avenida del Éxito 200, Ciudad Triple Peaks
+          </p>
+        </div>
       </header>
-      <main class="content">
-  <section class="section">
-  
+
+  <main class="content">
+  <section class="section_title">
+    <h2 class="recetas">Recetas</h2>
+    <p class="recetas_descripcion">
+      Echa un vistazo a las recetas que hemos reunido para que elabores
+      tus propios snacks.
+    </p>
   </section>
-  <section class="section-contenido">
-    <p>Contenido de la página</p>
-  </section>
+
+  <div class="videos_container">
+    <section class="video1">
+      <iframe
+        src="https://www.youtube.com/watch?v=j6VlT_jUVPc%20"
+        title="Receta Aeropress"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <p>Receta en Aeropress ~5 min</p>
+    </section>
+
+    <section class="video2">
+      <iframe
+        src="https://www.youtube.com/watch?v=st571DYYTR8"
+        title="Receta Cafetera Francesa"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <p>Receta en cafetera francesa ~15 min</p>
+    </section>
+  </div>
 </main>
 
       <footer class="footer">
