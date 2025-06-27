@@ -31,7 +31,7 @@
   margin-left: 30px; /* margen izquierdo extra si quieres que se separe del borde */
 }
 
-.nav__links{
+.nav__links {
   display: flex;
   list-style: none;
   padding: 0;
@@ -46,7 +46,7 @@
   align-items: center; /* para que el texto esté verticalmente centrado */
 }
 
-.nav__link{
+.nav__link {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
@@ -61,7 +61,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center; /* Centra verticalmente la imagen y el texto */
-  padding: 0 5px;      /* Margen horizontal pequeño */
+  padding: 0 5px; /* Margen horizontal pequeño */
   box-sizing: border-box;
 }
 
@@ -87,7 +87,7 @@
   font-size: 58px;
   line-height: 72px;
   letter-spacing: -1px;
-
+  color: #000000; /* color negro */
   max-width: 709px;
   margin-left: 80px;
   margin-top: 0; /* Pegado al primer título */
@@ -115,33 +115,46 @@
   object-fit: cover;
 }
 
-/* Estilo común a ambos elementos del footer */
-.header__footer-item {
+.header__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 80px 40px 80px; /* izquierda, derecha, abajo */
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #838383;
+  box-sizing: border-box;
+}
+
+.header__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 80px 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+  box-sizing: border-box;
+}
+
+.header__paragraph {
   max-width: 50%;
 }
 
-/* Para el que va alineado a la izquierda */
-.header__footer-item--left {
+.header__paragraph--left {
   text-align: left;
-  margin-left: 80px;
-  margin-bottom: 40px;
 }
 
-/* Para el que va alineado a la derecha */
-.header__footer-item--right {
+.header__paragraph--right {
   text-align: right;
-  margin-right: 80px;
-  margin-bottom: 40px;
 }
 
 .content {
-  background-color: #0A2850; /* fondo para todo el main */
+  background-color: #0a2850; /* fondo para todo el main */
   padding: 100px 80px 215px;
   box-sizing: border-box;
   display: flex;
@@ -158,14 +171,14 @@
 }
 
 /* Título "Recetas" */
-.recetas {
-  font-family: "Inter", sans-serif;
+.receta {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   max-width: 500px;
-  margin: 0;
+  margin: 0
 }
 
 /* Descripción */
@@ -211,7 +224,6 @@
   line-height: 24px;
   color: #fff;
 }
-
 
 .footer {
   font-family: "inter";
