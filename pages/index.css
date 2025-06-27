@@ -154,35 +154,32 @@
 }
 
 .content {
-  background-color: #0a2850; /* fondo para todo el main */
+  background-color: #0a2850;
   padding: 100px 80px 215px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 80px;
-  color: #fff; /* asegura que el texto sea visible */
+  color: #fff;
 }
 
-/* Sección de título y descripción */
-.recetas__header {
+.recetas {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-/* Título "Recetas" */
-.receta {
-  font-family: "Inter";
+.recetas__title {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   max-width: 500px;
-  margin: 0
+  margin: 0;
 }
 
-/* Descripción */
-.recetas__descripcion {
+.recetas__subtitle {
   font-family: "Noto Serif", serif;
   font-style: normal;
   font-weight: normal;
@@ -192,38 +189,33 @@
   margin: 0;
 }
 
-/* Contenedor centrado para ambos videos */
 .recetas__videos {
   display: flex;
-  justify-content: center; /* centra horizontalmente los videos */
+  justify-content: center;
   gap: 40px;
 }
 
-/* Estilo de cada video */
-.video1,
-.video2 {
+.recetas__video {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 480px;
 }
 
-/* iframe fijo */
-.video1 iframe,
-.video2 iframe {
+.recetas__iframe {
   width: 480px;
   height: 273px;
+  border: none; /* elimina necesidad de frameborder */
 }
 
-/* Texto debajo del video */
-.video1 p,
-.video2 p {
+.recetas__caption {
   margin-top: 24px;
   font-family: "Noto Serif", serif;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
 }
+
 
 .footer {
   font-family: "inter";
