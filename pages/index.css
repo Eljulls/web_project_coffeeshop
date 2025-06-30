@@ -141,15 +141,15 @@
   box-sizing: border-box;
 }
 
-.header__paragraph {
+.header__footer-paragraph {
   max-width: 50%;
 }
 
-.header__paragraph--left {
+.header__footer-paragraph--left {
   text-align: left;
 }
 
-.header__paragraph--right {
+.header__footer-paragraph--right {
   text-align: right;
 }
 
