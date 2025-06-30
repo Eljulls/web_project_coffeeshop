@@ -3,79 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Tu Nombre" />
-    <meta name="description" content="Página de inicio del Proyecto 4" />
-    <meta name="keywords" content="HTML, CSS, Proyecto, TripleTen" />
-    <title>Página de inicio</title>
+    <meta name="description" content="Cafeteria TripleTen" />
+    <meta name="author" content="Julio Cesar" />
+    <meta name="keywords" content="html, css" />
+    <title>Cafeteria TripleExpresso</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
-    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body>
     <div class="page">
       <header class="header">
         <nav class="nav">
           <img
-            class="nav__logo"
             src="./images/logo_coffeeshop_dark.svg"
-            alt="Logotipo de la CoffeeShop TripleEspresso"
+            alt="logo de cafeteria"
+            class="nav__logo"
           />
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#Recetas">Recetas</a>
+              <a class="nav__link" href="#recipes">Recetas</a>
             </li>
             <li>
-              <a class="nav__link" href="#Reservas-una-mesa"
-                >Reserva una mesa</a
-              >
+              <a class="nav__link" href="#reservation">Reservar una mesa</a>
             </li>
             <li>
-              <a class="nav__link" href="#Contactos">Contactos</a>
+              <a class="nav__link" href="#footer">Contactos</a>
             </li>
           </ul>
         </nav>
-
-        <div class="header__content">
-          <div>
-            <h1 class="header__title">
-              Café de especialidad
-              <span class="header__title header__title_alt"
-                >en Triple Peaks</span
-              >
-            </h1>
-
-            <p class="header__description">
-              ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
-              café para darte energía y motivar tu creatividad.
+        <h1 class="header__title">
+          <span class="header__span-accent">Café de especialidad</span>
+          en Triple Peaks
+        </h1>
+        <p class="header__description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+          para darte energía y motivar tu creatividad.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="interior de cafeteria"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <div class="header__timetable">
+            <p class="header__paragraph">Horarios:</p>
+            <p class="header__paragraph">
+              Lunes a Viernes (de 10:00h a 19:00h)
+            </p>
+            <p class="header__paragraph">
+              Sábados y Domingos (de 11:00h a 18:00h)
             </p>
           </div>
-          <div>
-            <img
-              class="header__image"
-              src="./images/inside_coffee_shop.png"
-              alt="Ilustración de la coffe CoffeeShop"
-            />
+          <div class="header__address">
+            <p class="header__paragraph">
+              Avenida del Éxito 200, Ciudad Triple Peaks
+            </p>
           </div>
         </div>
-
-        <div class="header__footer">
-          <p class="header__footer-paragraph header__footer-paragraph_left">
-            Horario:<br />
-            Lunes a Viernes (de 10:00h a 19:00h)<br />
-            Sábados y Domingos (de 11:00h a 18:00h)
-          </p>
-          <p class="header__footer-paragraph header__footer-paragraph_right">
-            Avenida del Éxito 200, Ciudad Triple Peaks
-          </p>
-        </div>
       </header>
-<main class="content">
+      <main class="content">
         <section class="recipes" id="recipes">
           <h2 class="recipes__title">Recetas</h2>
           <p class="recipes__subtitle">
@@ -115,13 +113,40 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation">
-        </section>
       </main>
-
-
-      <footer class="footer">
-        <p>&copy; 2025 Proyecto CoffeeShop Julio Cesar</p>
+      <footer class="footer" id="footer">
+        <div class="footer__circle"></div>
+        <div class="footer__content">
+          <img
+            src="./images/logo_coffeeshop_light.svg"
+            alt="logo de cafeteria"
+            class="footer__logo"
+          />
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Redes sociales</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <img
+                  src="./images/facebook_white.svg"
+                  alt="logo facebook"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <img
+                  src="./images/instagram_white.svg"
+                  alt="logo instagram"
+                  class="footer__social-icon"
+                />
+                <a href="#" class="footer__social-link">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="footer__copyright">&#x00a9; 2025 Julio Cesar</p>
+        </div>
       </footer>
     </div>
   </body>
