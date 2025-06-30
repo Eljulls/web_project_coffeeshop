@@ -80,17 +80,15 @@
 }
 
 /* Segundo título */
-.header__title--alt {
+.header__title_alt {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 58px;
   line-height: 72px;
   letter-spacing: -1px;
-  color: #000000; /* color negro */
-  max-width: 709px;
-  margin-left: 80px;
-  margin-top: 0; /* Pegado al primer título */
+  color: #000000;
+  display: inline;
 }
 
 /* Párrafo de descripción */
@@ -145,11 +143,11 @@
   max-width: 50%;
 }
 
-.header__footer-paragraph--left {
+.header__footer-paragraph_left {
   text-align: left;
 }
 
-.header__footer-paragraph--right {
+.header__footer-paragraph_right {
   text-align: right;
 }
 
