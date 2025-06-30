@@ -162,7 +162,6 @@
 }
 
 .content__recipes,
-.content__reservation,
 .content__contact {
   display: flex;
   flex-direction: column;
@@ -170,13 +169,11 @@
 }
 
 .content__recipes-header,
-.content__reservation-header,
 .content__contact-header {
   margin-bottom: 24px;
 }
 
 .content__recipes-title,
-.content__reservation-title,
 .content__contact-title {
   font-family: "Inter", sans-serif;
   font-weight: 500;
@@ -187,7 +184,6 @@
 }
 
 .content__recipes-subtitle,
-.content__reservation-description,
 .content__contact-description {
   font-family: "Noto Serif", serif;
   font-weight: normal;
