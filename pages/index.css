@@ -161,20 +161,16 @@
   color: #fff;
 }
 
-.content__recipes,
-.content__contact {
+/* Ajuste: usar .recipes y .reservation (no content__recipes) */
+.recipes,
+.reservation {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.content__recipes-header,
-.content__contact-header {
-  margin-bottom: 24px;
-}
-
-.content__recipes-title,
-.content__contact-title {
+/* Header dentro de recipes */
+.recipes > h2.recipes__title {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 44px;
@@ -183,8 +179,7 @@
   margin: 0;
 }
 
-.content__recipes-subtitle,
-.content__contact-description {
+.recipes > p.recipes__subtitle {
   font-family: "Noto Serif", serif;
   font-weight: normal;
   font-size: 20px;
@@ -193,32 +188,38 @@
   margin: 0;
 }
 
-.content__recipes-videos {
+/* Videos container */
+.recipes__videos {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
 
-.content__recipes-video {
+/* Cada video-item es un div dentro de recipes__videos */
+.recipes__video-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 480px;
+  justify-content: center; /* Centra horizontalmente los videos */
+  gap: 40px; /* Espacio entre los dos videos */
 }
 
-.content__recipes-iframe {
+
+/* Iframes */
+.recipes__iframe {
   width: 480px;
   height: 273px;
   border: none;
 }
 
-.content__recipes-caption {
+/* Caption */
+.recipes__video-caption {
   margin-top: 24px;
   font-family: "Noto Serif", serif;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
 }
+
+
 
 
 .footer {
